@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Maruti Venture | Premium Construction & Real Estate Developers</title>
-    <meta name="description" content="Sri Maruti Venture delivers premium residential and commercial construction with precision, transparency, and long-term value. Building Trust. Creating Landmarks.">
-    <meta name="keywords" content="construction, real estate, residential construction, commercial construction, builders, construction company, premium construction">
+    <title>Sri Maruti Venture | Premium Construction & Real Estate Developers in Bangalore</title>
+    <meta name="description" content="Sri Maruti Venture - Premium residential and commercial construction with 15+ years experience. Building Trust. Creating Landmarks in Bangalore & Karnataka.">
+    <meta name="keywords" content="construction company bangalore, real estate developers, residential construction, commercial construction, premium builders, construction services, bangalore construction">
     <meta name="author" content="Sri Maruti Venture">
+    <meta name="robots" content="index, follow">
     
-    <!-- Open Graph Tags for Social Media -->
+    <!-- Open Graph Tags -->
     <meta property="og:title" content="Sri Maruti Venture | Premium Construction">
-    <meta property="og:description" content="Building Trust. Creating Landmarks. Premium residential and commercial construction.">
+    <meta property="og:description" content="Building Trust. Creating Landmarks. 15+ years of premium construction excellence in Bangalore.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://srimarutiventure.com">
+    <meta property="og:image" content="https://srimarutiventure.com/logo.jpeg">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://srimarutiventure.com">
     
-    <!-- Structured Data for SEO -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ConstructionBusiness",
       "name": "Sri Maruti Venture",
       "image": "https://srimarutiventure.com/logo.jpeg",
-      "description": "Premium residential and commercial construction company delivering precision, transparency, and long-term value.",
+      "description": "Premium residential and commercial construction company with 15+ years experience in Bangalore, Karnataka.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "123 Construction Avenue",
@@ -34,12 +36,19 @@
         "addressCountry": "IN"
       },
       "telephone": "+91-9880838015",
-      "url": "https://srimarutiventure.com"
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "url": "https://srimarutiventure.com",
+      "priceRange": "₹₹₹",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87"
+      }
     }
     </script>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="logo.jpeg">
+    <link rel="icon" type="image/x-icon" href="logo.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +59,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* CSS Variables - REDUCED SPACING */
+        /* CSS Variables - Clean & Professional */
         :root {
             --white: #FFFFFF;
             --gold: #B8860B;
@@ -62,13 +71,13 @@
             --medium-gray: #E0E0E0;
             --spacing-xs: 0.5rem;
             --spacing-sm: 1rem;
-            --spacing-md: 2rem;
-            --spacing-lg: 3rem;
-            --spacing-xl: 5rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2.5rem;
+            --spacing-xl: 4rem;
             --border-radius: 8px;
             --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.12);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.12);
             --gold-gradient: linear-gradient(135deg, #B8860B 0%, #D4AF37 100%);
             --whatsapp-green: #25D366;
             --call-blue: #007AFF;
@@ -104,12 +113,12 @@
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             letter-spacing: -0.5px;
         }
 
         h2 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             position: relative;
             padding-bottom: var(--spacing-xs);
         }
@@ -125,7 +134,7 @@
         }
 
         h3 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
 
         p {
@@ -196,6 +205,38 @@
             }
         }
 
+        /* NEW: Fee Animation */
+        @keyframes priceGlow {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 5px 20px rgba(184, 134, 11, 0.3);
+            }
+            50% {
+                transform: scale(1.03);
+                box-shadow: 0 8px 30px rgba(184, 134, 11, 0.5);
+            }
+        }
+
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -207,25 +248,29 @@
             transform: translateY(0);
         }
 
-        /* ENHANCED Premium Buttons */
+        /* Clean Premium Buttons - One Style */
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 1rem 2rem;
+            padding: 1.1rem 2.2rem;
             font-weight: 600;
             text-decoration: none;
             border-radius: var(--border-radius);
             transition: var(--transition);
             cursor: pointer;
             border: none;
-            font-size: 1rem;
+            font-size: 1.05rem;
             font-family: 'Inter', sans-serif;
             letter-spacing: 0.5px;
             position: relative;
             overflow: hidden;
             z-index: 1;
             gap: 0.5rem;
+            min-height: 56px;
+            background: var(--gold-gradient);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
         }
 
         .btn:before {
@@ -244,56 +289,81 @@
             left: 100%;
         }
 
-        .btn-primary {
-            background: var(--gold-gradient);
-            color: var(--white);
-            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
-        }
-
-        .btn-primary:hover {
+        .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(184, 134, 11, 0.4);
         }
 
-        .btn-outline {
-            background-color: transparent;
-            color: var(--charcoal);
-            border: 2px solid var(--medium-gray);
+        /* Action Buttons for WhatsApp/Call */
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 1.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            gap: 0.5rem;
+            min-height: 52px;
         }
 
-        .btn-outline:hover {
-            border-color: var(--gold);
-            color: var(--gold);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow);
-        }
-
-        /* NEW: WhatsApp and Call Buttons */
-        .btn-whatsapp {
+        .whatsapp-btn {
             background-color: var(--whatsapp-green);
             color: var(--white);
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
         }
 
-        .btn-whatsapp:hover {
+        .whatsapp-btn:hover {
             background-color: #1da851;
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
         }
 
-        .btn-call {
+        .call-btn {
             background-color: var(--call-blue);
             color: var(--white);
             box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
         }
 
-        .btn-call:hover {
+        .call-btn:hover {
             background-color: #0066d6;
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(0, 122, 255, 0.4);
         }
 
-        /* Header */
+        /* NEW: Price Tag Animation */
+        .price-tag {
+            background: var(--gold-gradient);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 1.3rem;
+            box-shadow: 0 5px 20px rgba(184, 134, 11, 0.3);
+            animation: priceGlow 3s infinite ease-in-out;
+            margin: var(--spacing-sm) 0;
+        }
+
+        .price-tag i {
+            animation: float 2s infinite ease-in-out;
+        }
+
+        .price-note {
+            font-size: 0.9rem;
+            color: var(--gray);
+            opacity: 0.8;
+            margin-top: 0.5rem;
+        }
+
+        /* Sticky Header */
         header {
             position: fixed;
             top: 0;
@@ -309,7 +379,8 @@
 
         header.scrolled {
             padding: 0.8rem 0;
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
         }
 
         .header-container {
@@ -323,6 +394,7 @@
             align-items: center;
             gap: var(--spacing-sm);
             text-decoration: none;
+            transition: var(--transition);
         }
 
         .logo-img {
@@ -341,7 +413,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* Navigation */
+        /* Clean Navigation */
         .nav-menu {
             display: flex;
             list-style: none;
@@ -377,25 +449,38 @@
             width: 100%;
         }
 
+        .nav-menu a.active {
+            color: var(--gold);
+        }
+
+        .nav-menu a.active:after {
+            width: 100%;
+        }
+
         .hamburger {
             display: none;
             flex-direction: column;
             cursor: pointer;
-            gap: 5px;
+            gap: 6px;
             background: none;
             border: none;
             padding: 0.5rem;
             z-index: 1001;
+            width: 44px;
+            height: 44px;
+            justify-content: center;
+            align-items: center;
         }
 
         .hamburger span {
             width: 25px;
-            height: 2px;
+            height: 3px;
             background-color: var(--charcoal);
             transition: var(--transition);
+            border-radius: 2px;
         }
 
-        /* Hero Section */
+        /* Hero Section with Price Animation */
         .hero {
             height: 90vh;
             min-height: 700px;
@@ -418,7 +503,6 @@
                 url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             animation: fadeIn 1.5s ease-out;
         }
 
@@ -433,21 +517,15 @@
         .hero h1 {
             color: var(--white);
             margin-bottom: var(--spacing-md);
-            font-size: 3.8rem;
+            font-size: 3.5rem;
             line-height: 1.1;
         }
 
         .hero p {
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
             margin-bottom: var(--spacing-lg);
             max-width: 650px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: var(--spacing-sm);
-            flex-wrap: wrap;
         }
 
         /* About Section */
@@ -481,6 +559,20 @@
             transform: scale(1.05);
         }
 
+        /* NEW: Pricing Highlight in About */
+        .pricing-highlight {
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-md);
+            background: rgba(184, 134, 11, 0.05);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--gold);
+        }
+
+        .pricing-highlight h4 {
+            color: var(--gold);
+            margin-bottom: var(--spacing-sm);
+        }
+
         .about-stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -501,20 +593,20 @@
         .stat-number {
             font-size: 2.2rem;
             font-weight: 700;
-            background: var(--gold-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--gold);
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             font-family: 'Inter', sans-serif;
+            line-height: 1;
         }
 
         .stat-label {
             color: var(--gray);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            font-weight: 500;
         }
 
-        /* Services Section */
+        /* Services Section - Clean */
         .services {
             background-color: var(--light-gray);
         }
@@ -532,17 +624,15 @@
             transition: var(--transition);
             box-shadow: var(--shadow);
             height: 100%;
-            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
             box-shadow: var(--shadow-lg);
-            border-color: var(--gold);
         }
 
         .service-image {
-            height: 200px;
+            height: 220px;
             overflow: hidden;
         }
 
@@ -572,38 +662,41 @@
             margin-bottom: var(--spacing-sm);
             color: var(--gold);
             font-size: 1.5rem;
-            border: 1px solid rgba(184, 134, 11, 0.2);
         }
 
-        /* FIXED Projects Section - Better Grid Layout */
+        /* Projects Section - All 6 Photos */
+        .projects {
+            background-color: var(--white);
+        }
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: var(--spacing-md);
         }
 
-        .project-card {
+        .project-item {
             border-radius: var(--border-radius);
             overflow: hidden;
             position: relative;
-            height: 350px;
+            height: 300px;
             box-shadow: var(--shadow);
             transition: var(--transition);
         }
 
-        .project-card:hover {
-            transform: translateY(-8px);
+        .project-item:hover {
+            transform: translateY(-5px);
             box-shadow: var(--shadow-lg);
         }
 
-        .project-image {
+        .project-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.8s ease;
         }
 
-        .project-card:hover .project-image {
+        .project-item:hover img {
             transform: scale(1.05);
         }
 
@@ -622,33 +715,49 @@
         }
 
         .testimonials p {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .testimonial-slider {
             max-width: 800px;
             margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .testimonial-track {
-            display: flex;
-            transition: transform 0.5s ease;
         }
 
         .testimonial-card {
             background-color: rgba(255, 255, 255, 0.05);
             padding: var(--spacing-lg);
             border-radius: var(--border-radius);
-            min-width: 100%;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             border: 1px solid rgba(184, 134, 11, 0.2);
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 4rem;
+            color: var(--gold);
+            opacity: 0.3;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .testimonial-content {
+            padding-left: var(--spacing-md);
+            padding-top: var(--spacing-md);
         }
 
         .testimonial-rating {
             color: var(--gold);
             margin-bottom: var(--spacing-sm);
+            font-size: 1.2rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            font-style: italic;
+            margin-bottom: var(--spacing-lg);
         }
 
         .client-info {
@@ -659,11 +768,11 @@
         }
 
         .client-avatar {
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            background-color: var(--medium-gray);
             overflow: hidden;
+            border: 2px solid var(--gold);
         }
 
         .client-avatar img {
@@ -672,87 +781,92 @@
             object-fit: cover;
         }
 
-        .slider-controls {
-            display: flex;
-            justify-content: center;
-            gap: var(--spacing-sm);
-            margin-top: var(--spacing-lg);
-        }
-
-        .slider-btn {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(184, 134, 11, 0.3);
-            color: var(--gold);
-            cursor: pointer;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .slider-btn:hover {
-            background-color: var(--gold);
+        .client-details h4 {
             color: var(--white);
+            margin-bottom: 0.3rem;
         }
 
-        /* Contact Section - ENHANCED with WhatsApp/Call Buttons */
-        .contact-container {
+        .client-details p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Get Quote Section - With Price Highlight */
+        .quote-section {
+            background: var(--gold-gradient);
+            color: var(--white);
+            padding: var(--spacing-xl) 0;
+        }
+
+        .quote-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: var(--spacing-lg);
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-md);
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: var(--spacing-sm);
-            padding: var(--spacing-md);
-            background-color: var(--light-gray);
-            border-radius: var(--border-radius);
-            transition: var(--transition);
-        }
-
-        .contact-item:hover {
-            transform: translateX(8px);
-            background-color: rgba(184, 134, 11, 0.05);
-        }
-
-        .contact-icon {
-            width: 45px;
-            height: 45px;
-            background: rgba(184, 134, 11, 0.1);
-            border-radius: 50%;
-            display: flex;
             align-items: center;
-            justify-content: center;
-            color: var(--gold);
-            font-size: 1.1rem;
-            flex-shrink: 0;
         }
 
-        /* NEW: Contact Action Buttons */
-        .contact-actions {
+        .quote-content h2 {
+            color: var(--white);
+        }
+
+        .quote-content h2:after {
+            background: var(--white);
+        }
+
+        .quote-content p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+        }
+
+        /* NEW: Price Badge in Quote Section */
+        .price-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            margin: var(--spacing-md) 0;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .price-amount {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--white);
+            display: block;
+            line-height: 1;
+        }
+
+        .price-unit {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .quote-actions {
             display: flex;
             gap: var(--spacing-sm);
             margin-top: var(--spacing-md);
             flex-wrap: wrap;
         }
 
-        .contact-actions .btn {
+        .quote-actions .action-btn {
             flex: 1;
-            min-width: 200px;
+            min-width: 150px;
         }
 
-        /* NEW: WhatsApp Floating Button */
+        .quote-form {
+            background: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .quote-form h3 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -780,26 +894,6 @@
 
         .whatsapp-float i {
             font-size: 1.8rem;
-        }
-
-        .whatsapp-text {
-            position: absolute;
-            right: 70px;
-            background-color: var(--whatsapp-green);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            white-space: nowrap;
-            opacity: 0;
-            transform: translateX(10px);
-            transition: var(--transition);
-            pointer-events: none;
-        }
-
-        .whatsapp-float:hover .whatsapp-text {
-            opacity: 1;
-            transform: translateX(0);
         }
 
         /* Footer */
@@ -868,8 +962,8 @@
         }
 
         .social-links a {
-            width: 40px;
-            height: 40px;
+            width: 42px;
+            height: 42px;
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.1);
             display: flex;
@@ -893,69 +987,14 @@
             font-size: 0.9rem;
         }
 
-        /* Popup Modal */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 2000;
-            padding: var(--spacing-md);
-            backdrop-filter: blur(5px);
-        }
-
-        .modal {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            width: 100%;
-            max-width: 450px;
-            padding: var(--spacing-lg);
-            position: relative;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            animation: fadeInUp 0.4s ease;
-            border: 1px solid rgba(184, 134, 11, 0.2);
-        }
-
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: var(--spacing-md);
-            padding-bottom: var(--spacing-sm);
-            border-bottom: 1px solid var(--medium-gray);
-        }
-
-        .modal-header h3 {
-            margin-bottom: 0;
-        }
-
-        .close-modal {
-            background: none;
-            border: none;
-            font-size: 1.8rem;
-            cursor: pointer;
-            color: var(--gray);
-            transition: var(--transition);
-            line-height: 1;
-        }
-
-        .close-modal:hover {
-            color: var(--charcoal);
-            transform: rotate(90deg);
-        }
-
+        /* Form Styles */
         .form-group {
             margin-bottom: var(--spacing-md);
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             font-weight: 500;
             color: var(--charcoal);
             font-size: 0.95rem;
@@ -963,7 +1002,7 @@
 
         .form-control {
             width: 100%;
-            padding: 0.9rem 1.2rem;
+            padding: 1rem 1.2rem;
             border: 1px solid var(--medium-gray);
             border-radius: var(--border-radius);
             font-family: 'Inter', sans-serif;
@@ -980,7 +1019,7 @@
 
         .form-select {
             width: 100%;
-            padding: 0.9rem 1.2rem;
+            padding: 1rem 1.2rem;
             border: 1px solid var(--medium-gray);
             border-radius: var(--border-radius);
             font-family: 'Inter', sans-serif;
@@ -999,8 +1038,8 @@
             position: fixed;
             bottom: 100px;
             right: 25px;
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
             background: var(--gold-gradient);
             color: var(--white);
             border-radius: 50%;
@@ -1028,15 +1067,15 @@
         /* Responsive Styles */
         @media (max-width: 1200px) {
             h1 {
-                font-size: 3rem;
+                font-size: 2.8rem;
             }
             
             h2 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             .hero h1 {
-                font-size: 3.2rem;
+                font-size: 3rem;
             }
             
             .projects-grid {
@@ -1046,15 +1085,9 @@
 
         @media (max-width: 992px) {
             .about-container,
-            .contact-container {
+            .quote-container {
                 grid-template-columns: 1fr;
                 gap: var(--spacing-lg);
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                align-items: flex-start;
-                width: fit-content;
             }
             
             .about-image {
@@ -1066,8 +1099,12 @@
                 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             }
             
-            .contact-actions .btn {
-                min-width: 100%;
+            .quote-actions {
+                flex-direction: column;
+            }
+            
+            .quote-actions .action-btn {
+                width: 100%;
             }
         }
 
@@ -1079,14 +1116,15 @@
                 flex-direction: column;
                 background-color: var(--white);
                 width: 100%;
-                max-width: 280px;
+                max-width: 300px;
                 text-align: left;
                 transition: var(--transition);
                 box-shadow: var(--shadow-lg);
                 padding: var(--spacing-xl) var(--spacing-lg);
                 gap: var(--spacing-md);
                 height: 100vh;
-                justify-content: center;
+                justify-content: flex-start;
+                padding-top: 100px;
             }
             
             .nav-menu.active {
@@ -1098,7 +1136,7 @@
             }
             
             .hamburger.active span:nth-child(1) {
-                transform: rotate(-45deg) translate(-5px, 6px);
+                transform: rotate(-45deg) translate(-6px, 6px);
             }
             
             .hamburger.active span:nth-child(2) {
@@ -1106,7 +1144,7 @@
             }
             
             .hamburger.active span:nth-child(3) {
-                transform: rotate(45deg) translate(-5px, -6px);
+                transform: rotate(45deg) translate(-6px, -6px);
             }
             
             section {
@@ -1120,7 +1158,7 @@
             }
             
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.3rem;
             }
             
             .hero p {
@@ -1128,11 +1166,11 @@
             }
             
             h1 {
-                font-size: 2.3rem;
+                font-size: 2rem;
             }
             
             h2 {
-                font-size: 1.9rem;
+                font-size: 1.8rem;
             }
             
             .projects-grid {
@@ -1140,8 +1178,8 @@
                 gap: var(--spacing-sm);
             }
             
-            .project-card {
-                height: 300px;
+            .project-item {
+                height: 280px;
             }
             
             .about-stats {
@@ -1152,7 +1190,7 @@
             .stat-item {
                 border-right: none;
                 border-bottom: 1px solid var(--medium-gray);
-                padding: var(--spacing-sm) 0;
+                padding: var(--spacing-md) 0;
             }
             
             .stat-item:last-child {
@@ -1169,12 +1207,13 @@
             .back-to-top {
                 bottom: 85px;
                 right: 20px;
-                width: 40px;
-                height: 40px;
+                width: 45px;
+                height: 45px;
             }
             
-            .whatsapp-text {
-                display: none;
+            .btn {
+                padding: 1rem 1.8rem;
+                min-height: 52px;
             }
         }
 
@@ -1184,24 +1223,24 @@
             }
             
             h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             h2 {
-                font-size: 1.7rem;
+                font-size: 1.6rem;
+            }
+            
+            .hero {
+                height: 80vh;
+                min-height: 500px;
             }
             
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             .hero p {
                 font-size: 1rem;
-            }
-            
-            .btn {
-                padding: 0.9rem 1.8rem;
-                width: 100%;
             }
             
             .services-grid {
@@ -1212,23 +1251,36 @@
                 margin-bottom: var(--spacing-md);
             }
             
-            .contact-actions {
-                flex-direction: column;
+            .project-item {
+                height: 250px;
+            }
+            
+            .testimonial-card {
+                padding: var(--spacing-md);
+            }
+            
+            .testimonial-text {
+                font-size: 1.1rem;
+            }
+            
+            .price-tag {
+                font-size: 1.1rem;
+                padding: 0.6rem 1.2rem;
+            }
+            
+            .price-amount {
+                font-size: 1.6rem;
             }
         }
 
         @media (max-width: 480px) {
             .hero {
-                height: 80vh;
-                min-height: 500px;
-            }
-            
-            .hero-buttons {
-                width: 100%;
+                height: 75vh;
+                min-height: 450px;
             }
             
             .company-name {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
             }
             
             .logo-img {
@@ -1249,26 +1301,36 @@
                 width: 40px;
                 height: 40px;
             }
+            
+            .btn {
+                padding: 0.9rem 1.5rem;
+                font-size: 1rem;
+                min-height: 48px;
+            }
+            
+            .project-item {
+                height: 220px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Sticky Header -->
     <header id="header">
         <div class="container header-container">
             <a href="#home" class="logo-container">
-                <img src="logo.jpeg" alt="Sri Maruti Venture Logo - Premium Construction Company" class="logo-img">
+                <img src="logo.png" alt="Sri Maruti Venture Logo - Premium Construction Company in Bangalore" class="logo-img">
                 <div class="company-name">Sri Maruti Venture</div>
             </a>
             
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#quote">Get Quote</a></li>
                 </ul>
                 
                 <button class="hamburger" aria-label="Toggle Menu">
@@ -1280,316 +1342,250 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>Building Trust.<br>Creating Landmarks.</h1>
-                <p>Sri Maruti Venture delivers premium residential and commercial construction with precision, transparency, and long-term value. We transform visions into enduring realities.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                    <a href="#projects" class="btn btn-outline">View Our Projects</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Us</h2>
-                <p class="text-center">With over 15 years of excellence in construction, we build more than structures—we build trust and lasting value.</p>
-            </div>
-            
-            <div class="about-container">
-                <div class="about-content fade-in">
-                    <h3>Excellence in Construction Since 2005</h3>
-                    <p>At Sri Maruti Venture, we believe that great construction is about more than just building structures—it's about creating lasting value, trust, and landmarks that stand the test of time.</p>
-                    <p>Our commitment to using premium materials, employing skilled craftsmen, and maintaining clear communication throughout the construction process ensures that every project meets the highest standards of excellence.</p>
-                    <p>We take pride in our transparent process, where clients are involved at every stage, from initial design to final handover, ensuring complete satisfaction and long-term reliability.</p>
+    <main>
+        <!-- Hero Section with Price Animation -->
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Building Trust.<br>Creating Landmarks.</h1>
+                    <p>Sri Maruti Venture delivers premium residential and commercial construction with precision, transparency, and long-term value.</p>
                     
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">200+</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Client Satisfaction</span>
-                        </div>
+                    <!-- NEW: Animated Price Tag -->
+                    <div class="price-tag fade-in">
+                        <i class="fas fa-tag"></i>
+                        <span>Starting from ₹1899/sq.ft</span>
                     </div>
-                </div>
-                
-                <div class="about-image fade-in">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sri Maruti Venture Construction Excellence">
+                    <p class="price-note">Transparent pricing | No hidden costs | Premium quality materials</p>
+                    
+                    <a href="#quote" class="btn">
+                        <i class="fas fa-hard-hat"></i> Start Your Project
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-                <p class="text-center">Comprehensive construction solutions tailored to your unique requirements and vision.</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Residential Construction Services">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-home"></i>
+        <!-- About Section with Pricing Highlight -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Us</h2>
+                    <p class="text-center">With over 15 years of excellence in construction, we build more than structures—we build trust and lasting value.</p>
+                </div>
+                
+                <div class="about-container">
+                    <div class="about-content fade-in">
+                        <h3>Excellence in Construction Since 2005</h3>
+                        <p>At Sri Maruti Venture, we believe that great construction is about more than just building structures—it's about creating lasting value, trust, and landmarks that stand the test of time.</p>
+                        <p>Our commitment to using premium materials, employing skilled craftsmen, and maintaining clear communication ensures every project meets the highest standards of excellence.</p>
+                        
+                        <!-- NEW: Pricing Highlight Box -->
+                        <div class="pricing-highlight fade-in">
+                            <h4>Transparent & Competitive Pricing</h4>
+                            <p>We offer premium construction services starting at just <strong>₹1899 per square foot</strong>. Our transparent pricing includes quality materials, skilled labor, and comprehensive project management.</p>
                         </div>
-                        <h3>Residential Construction</h3>
-                        <p>Custom-designed homes built with precision and attention to detail, creating living spaces that reflect your vision and lifestyle.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Commercial Construction Services">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h3>Commercial Construction</h3>
-                        <p>Modern commercial spaces designed for functionality and aesthetic appeal, supporting business growth and success.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1503387769-00a112127ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Architectural Design Services">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-drafting-compass"></i>
-                        </div>
-                        <h3>Architectural Design</h3>
-                        <p>Innovative architectural solutions that blend form and function, creating structures that are both beautiful and practical.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Project Management Services">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-hard-hat"></i>
-                        </div>
-                        <h3>Project Management</h3>
-                        <p>Comprehensive project oversight ensuring timely completion, budget adherence, and quality control at every stage.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section - ONLY YOUR PROJECT PHOTOS -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Projects</h2>
-                <p class="text-center">A showcase of our premium residential and commercial construction projects.</p>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <img src="p1.jpeg" alt="Sri Maruti Venture Project 1" class="project-image">
-                </div>
-                
-                <div class="project-card fade-in">
-                    <img src="p2.jpeg" alt="Sri Maruti Venture Project 2" class="project-image">
-                </div>
-                
-                <div class="project-card fade-in">
-                    <img src="p3.jpeg" alt="Sri Maruti Venture Project 3" class="project-image">
-                </div>
-                
-                <div class="project-card fade-in">
-                    <img src="p4.jpeg" alt="Sri Maruti Venture Project 4" class="project-image">
-                </div>
-                
-                <div class="project-card fade-in">
-                    <img src="p5.jpeg" alt="Sri Maruti Venture Project 5" class="project-image">
-                </div>
-                
-                <div class="project-card fade-in">
-                    <img src="p6.jpeg" alt="Sri Maruti Venture Project 6" class="project-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>Client Testimonials</h2>
-                <p class="text-center">What our clients say about our work and commitment to excellence.</p>
-            </div>
-            
-            <div class="testimonial-slider">
-                <div class="testimonial-track">
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Sri Maruti Venture transformed our vision into reality with exceptional craftsmanship and attention to detail. Their transparent process and commitment to quality made our construction journey smooth and stress-free."</p>
-                        <div class="client-info">
-                            <div class="client-avatar">
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Kumar - Client">
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Years Experience</span>
                             </div>
-                            <div>
-                                <h4>Rajesh Kumar</h4>
-                                <p>Residential Client</p>
+                            <div class="stat-item">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"The commercial plaza project was completed ahead of schedule with impeccable quality. Sri Maruti Venture's professionalism and attention to detail exceeded our expectations. Highly recommended for any construction project."</p>
-                        <div class="client-info">
-                            <div class="client-avatar">
-                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma - Client">
-                            </div>
-                            <div>
-                                <h4>Priya Sharma</h4>
-                                <p>Commercial Client</p>
-                            </div>
-                        </div>
+                    <div class="about-image fade-in">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sri Maruti Venture Construction Excellence">
                     </div>
                 </div>
-                
-                <div class="slider-controls">
-                    <button class="slider-btn prev-btn" aria-label="Previous Testimonial">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="slider-btn next-btn" aria-label="Next Testimonial">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section - WITH WHATSAPP/CALL BUTTONS -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-                <p class="text-center">Ready to start your construction project? Get in touch with us today.</p>
-            </div>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p>We're here to answer your questions and discuss your construction needs. Contact us via phone, email, or visit our office.</p>
-                    
-                    <div class="contact-item fade-in">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91 98808 38015</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item fade-in">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@srimarutiventure.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item fade-in">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Office Address</h4>
-                            <p>123 Construction Avenue, Bengaluru, Karnataka 560001</p>
-                        </div>
-                    </div>
-                    
-                    <!-- NEW: Contact Action Buttons -->
-                    <div class="contact-actions">
-                        <a href="tel:+919880838015" class="btn btn-call">
-                            <i class="fas fa-phone"></i> Call Now
-                        </a>
-                        <a href="#" class="btn btn-whatsapp" id="contactWhatsAppBtn">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Services</h2>
+                    <p class="text-center">Comprehensive construction solutions tailored to your unique requirements and vision.</p>
                 </div>
                 
-                <div class="contact-form fade-in">
-                    <h3>Start Your Project</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" class="form-control" required>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Residential Construction Services">
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="mobile">Mobile Number *</label>
-                            <input type="tel" id="mobile" class="form-control" required>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3>Residential Construction</h3>
+                            <p>Custom-designed homes built with precision and attention to detail, creating living spaces that reflect your vision and lifestyle.</p>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="service-card fade-in">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Commercial Construction Services">
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="projectType">Project Type *</label>
-                            <select id="projectType" class="form-select" required>
-                                <option value="">Select Project Type</option>
-                                <option value="residential">Residential</option>
-                                <option value="commercial">Commercial</option>
-                            </select>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>Commercial Construction</h3>
+                            <p>Modern commercial spaces designed for functionality and aesthetic appeal, supporting business growth and success.</p>
                         </div>
-                        
-                        <button type="submit" class="btn btn-primary form-submit">Submit Inquiry</button>
-                    </form>
+                    </div>
+                    
+                    <div class="service-card fade-in">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1503387769-00a112127ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Architectural Design Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <h3>Architectural Design</h3>
+                            <p>Innovative architectural solutions that blend form and function, creating structures that are both beautiful and practical.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Projects Section - ALL 6 PHOTOS -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Projects</h2>
+                    <p class="text-center">A showcase of our premium residential and commercial construction projects.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-item fade-in">
+                        <img src="p1.jpeg" alt="Sri Maruti Venture Project 1 - Luxury Residential Complex">
+                    </div>
+                    
+                    <div class="project-item fade-in">
+                        <img src="p2.jpeg" alt="Sri Maruti Venture Project 2 - Modern Commercial Plaza">
+                    </div>
+                    
+                    <div class="project-item fade-in">
+                        <img src="p3.jpeg" alt="Sri Maruti Venture Project 3 - Premium Villa Development">
+                    </div>
+                    
+                    <div class="project-item fade-in">
+                        <img src="p4.jpeg" alt="Sri Maruti Venture Project 4 - Urban Residential Tower">
+                    </div>
+                    
+                    <div class="project-item fade-in">
+                        <img src="p5.jpeg" alt="Sri Maruti Venture Project 5 - Corporate Office Building">
+                    </div>
+                    
+                    <div class="project-item fade-in">
+                        <img src="p6.jpeg" alt="Sri Maruti Venture Project 6 - High-end Apartment Complex">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Client Testimonials</h2>
+                    <p class="text-center">What our clients say about our work and commitment to excellence.</p>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-quote">"</div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Sri Maruti Venture transformed our vision into reality with exceptional craftsmanship and attention to detail. Their transparent pricing and commitment to quality made our construction journey smooth and stress-free."</p>
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Kumar - Satisfied Client">
+                                </div>
+                                <div class="client-details">
+                                    <h4>Rajesh Kumar</h4>
+                                    <p>Residential Client, Bangalore</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Quote Section - With Animated Price Badge -->
+        <section id="quote" class="quote-section">
+            <div class="container">
+                <div class="quote-container">
+                    <div class="quote-content fade-in">
+                        <h2>Get Your Free Quote</h2>
+                        <p>Start your construction project with confidence. Get a detailed quote from our experts within 24 hours.</p>
+                        
+                        <!-- NEW: Animated Price Badge -->
+                        <div class="price-badge">
+                            <span class="price-amount">₹1899</span>
+                            <span class="price-unit">Starting price per sq.ft</span>
+                        </div>
+                        
+                        <div class="quote-actions">
+                            <a href="tel:+919880838015" class="action-btn call-btn">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="#" class="action-btn whatsapp-btn" id="quoteWhatsAppBtn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="quote-form fade-in">
+                        <h3>Request Free Quote</h3>
+                        <form id="quoteForm">
+                            <div class="form-group">
+                                <label for="quoteName">Full Name *</label>
+                                <input type="text" id="quoteName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteMobile">Mobile Number *</label>
+                                <input type="tel" id="quoteMobile" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteEmail">Email Address</label>
+                                <input type="email" id="quoteEmail" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteProjectType">Project Type *</label>
+                                <select id="quoteProjectType" class="form-select" required>
+                                    <option value="">Select Project Type</option>
+                                    <option value="residential">Residential</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="both">Both</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn form-submit">
+                                <i class="fas fa-file-invoice-dollar"></i> Get Free Quote
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -1597,10 +1593,15 @@
             <div class="footer-container">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <img src="logo.jpeg" alt="Sri Maruti Venture Logo" class="logo-img">
+                        <img src="logo.png" alt="Sri Maruti Venture Logo" class="logo-img">
                         <div class="company-name">Sri Maruti Venture</div>
                     </div>
                     <p>Building trust and creating landmarks through premium construction services with precision, transparency, and long-term value.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-links">
@@ -1611,17 +1612,7 @@
                         <li><a href="#services">Services</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#services">Residential Construction</a></li>
-                        <li><a href="#services">Commercial Construction</a></li>
-                        <li><a href="#services">Architectural Design</a></li>
-                        <li><a href="#services">Project Management</a></li>
+                        <li><a href="#quote">Get Quote</a></li>
                     </ul>
                 </div>
                 
@@ -1641,10 +1632,9 @@
         </div>
     </footer>
 
-    <!-- NEW: WhatsApp Floating Button -->
+    <!-- WhatsApp Floating Button -->
     <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
-        <span class="whatsapp-text">Chat with us</span>
     </a>
 
     <!-- Back to Top Button -->
@@ -1652,48 +1642,11 @@
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <!-- Popup Modal -->
-    <div class="modal-overlay" id="popupModal">
-        <div class="modal">
-            <div class="modal-header">
-                <h3>Start Your Project</h3>
-                <button class="close-modal" aria-label="Close Modal">&times;</button>
-            </div>
-            
-            <form id="popupForm">
-                <div class="form-group">
-                    <label for="popupName">Full Name *</label>
-                    <input type="text" id="popupName" class="form-control" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="popupMobile">Mobile Number *</label>
-                    <input type="tel" id="popupMobile" class="form-control" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="popupEmail">Email Address *</label>
-                    <input type="email" id="popupEmail" class="form-control" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="popupProjectType">Project Type *</label>
-                    <select id="popupProjectType" class="form-select" required>
-                        <option value="">Select Project Type</option>
-                        <option value="Residential">Residential</option>
-                        <option value="Commercial">Commercial</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="btn btn-primary form-submit">Submit & Connect via WhatsApp</button>
-            </form>
-        </div>
-    </div>
-
     <script>
         // Mobile Navigation Toggle
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-menu a');
         
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
@@ -1702,22 +1655,46 @@
         });
         
         // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
+        navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
                 document.body.style.overflow = 'auto';
+                
+                // Update active nav item
+                navLinks.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
             });
         });
         
-        // Header scroll effect
+        // Sticky Header with active section highlighting
         const header = document.getElementById('header');
+        const sections = document.querySelectorAll('section');
+        
         window.addEventListener('scroll', () => {
+            // Sticky header effect
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
+            
+            // Active section highlighting
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
         });
         
         // Scroll animations
@@ -1736,47 +1713,6 @@
         
         fadeElements.forEach(el => fadeObserver.observe(el));
         
-        // Testimonial Slider
-        const testimonialTrack = document.querySelector('.testimonial-track');
-        const testimonialCards = document.querySelectorAll('.testimonial-card');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
-        let currentIndex = 0;
-        let autoSlideInterval;
-        
-        function updateSlider() {
-            const cardWidth = testimonialCards[0].offsetWidth;
-            testimonialTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-        }
-        
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % testimonialCards.length;
-            updateSlider();
-        }
-        
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + testimonialCards.length) % testimonialCards.length;
-            updateSlider();
-        }
-        
-        nextBtn.addEventListener('click', nextSlide);
-        prevBtn.addEventListener('click', prevSlide);
-        
-        // Auto-slide testimonials
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(nextSlide, 5000);
-        }
-        
-        function stopAutoSlide() {
-            clearInterval(autoSlideInterval);
-        }
-        
-        // Pause auto-slide on hover
-        testimonialTrack.addEventListener('mouseenter', stopAutoSlide);
-        testimonialTrack.addEventListener('mouseleave', startAutoSlide);
-        
-        startAutoSlide();
-        
         // Back to Top Button
         const backToTop = document.querySelector('.back-to-top');
         window.addEventListener('scroll', () => {
@@ -1790,16 +1726,15 @@
         // WhatsApp Functionality
         const whatsappNumber = "9880838015";
         
-        // Function to create WhatsApp URL with prefilled message
         function createWhatsAppURL(formData = null) {
             let message = "Hello Sri Maruti Venture, I'm interested in your construction services.";
             
             if (formData) {
-                // If form data is provided, include it in the message
-                message += `%0A%0AHere are my details:%0AName: ${formData.name}%0AMobile: ${formData.mobile}%0AEmail: ${formData.email}%0AProject Type: ${formData.projectType}`;
+                message += `%0A%0AHere are my details:%0AName: ${formData.name}%0AMobile: ${formData.mobile}%0AEmail: ${formData.email || 'Not provided'}%0AProject Type: ${formData.projectType}`;
+                message += `%0A%0AI saw your pricing starts from ₹1899/sq.ft. Can you provide more details?`;
             } else {
-                // Default message for direct WhatsApp button
                 message += "%0A%0AI would like to discuss a construction project. Please contact me.";
+                message += "%0A%0AI saw your pricing starts from ₹1899/sq.ft. Can you provide more details?";
             }
             
             return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -1812,93 +1747,46 @@
             window.open(createWhatsAppURL(), '_blank');
         });
         
-        // Contact Section WhatsApp Button
-        const contactWhatsAppBtn = document.getElementById('contactWhatsAppBtn');
-        contactWhatsAppBtn.addEventListener('click', (e) => {
+        // Quote Section WhatsApp Button
+        const quoteWhatsAppBtn = document.getElementById('quoteWhatsAppBtn');
+        quoteWhatsAppBtn.addEventListener('click', (e) => {
             e.preventDefault();
             window.open(createWhatsAppURL(), '_blank');
         });
         
-        // Popup Modal Logic
-        const popupModal = document.getElementById('popupModal');
-        const closeModal = document.querySelector('.close-modal');
-        const popupForm = document.getElementById('popupForm');
-        const contactForm = document.getElementById('contactForm');
+        // Quote Form Submission
+        const quoteForm = document.getElementById('quoteForm');
         
-        // Show popup after 10 seconds
-        setTimeout(() => {
-            popupModal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }, 10000);
-        
-        // Close modal
-        closeModal.addEventListener('click', () => {
-            popupModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
-        
-        // Close modal when clicking outside
-        popupModal.addEventListener('click', (e) => {
-            if (e.target === popupModal) {
-                popupModal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        });
-        
-        // Form submission function - SIMPLIFIED
-        function submitForm(formData, isPopup = false) {
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('quoteName').value,
+                mobile: document.getElementById('quoteMobile').value,
+                email: document.getElementById('quoteEmail').value,
+                projectType: document.getElementById('quoteProjectType').value
+            };
+            
             // Open WhatsApp with form data
             window.open(createWhatsAppURL(formData), '_blank');
             
-            // Close popup if it's from popup form
-            if (isPopup) {
-                popupModal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-            
             // Reset form
-            if (isPopup) {
-                popupForm.reset();
-            } else {
-                contactForm.reset();
-            }
+            quoteForm.reset();
             
             return false;
-        }
-        
-        // Popup form submission
-        popupForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const formData = {
-                name: document.getElementById('popupName').value,
-                mobile: document.getElementById('popupMobile').value,
-                email: document.getElementById('popupEmail').value,
-                projectType: document.getElementById('popupProjectType').value
-            };
-            
-            submitForm(formData, true);
         });
         
-        // Contact form submission
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+        // Price Animation Enhancement
+        const priceTags = document.querySelectorAll('.price-tag, .price-badge');
+        priceTags.forEach(tag => {
+            tag.addEventListener('mouseenter', () => {
+                tag.style.animation = 'priceGlow 1s infinite ease-in-out';
+            });
             
-            const formData = {
-                name: document.getElementById('name').value,
-                mobile: document.getElementById('mobile').value,
-                email: document.getElementById('email').value,
-                projectType: document.getElementById('projectType').value
-            };
-            
-            submitForm(formData, false);
+            tag.addEventListener('mouseleave', () => {
+                tag.style.animation = 'priceGlow 3s infinite ease-in-out';
+            });
         });
-        
-        // Update slider on window resize
-        window.addEventListener('resize', updateSlider);
-        
-        // Initialize slider
-        updateSlider();
     </script>
 </body>
 </html>
