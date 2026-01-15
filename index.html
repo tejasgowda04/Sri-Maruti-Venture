@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sri Maruti Venture | Premium Construction & Real Estate Developers in Bangalore</title>
     <meta name="description" content="Sri Maruti Venture - Premium residential and commercial construction with 15+ years experience. Building Trust. Creating Landmarks in Bangalore & Karnataka.">
-    <meta name="keywords" content="construction company bangalore, real estate developers, residential construction, commercial construction, premium builders, construction services, bangalore construction">
+    <meta name="keywords" content="construction company bangalore, real estate developers, residential construction, commercial construction, premium builders, construction services, bangalore construction, interior design">
     <meta name="author" content="Sri Maruti Venture">
     <meta name="robots" content="index, follow">
     
@@ -217,23 +217,22 @@
             }
         }
 
-        @keyframes countUp {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         @keyframes float {
             0%, 100% {
                 transform: translateY(0);
             }
             50% {
                 transform: translateY(-10px);
+            }
+        }
+
+        /* NEW: Pillar Animation */
+        @keyframes pillarPulse {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
             }
         }
 
@@ -528,9 +527,66 @@
             max-width: 650px;
         }
 
+        /* NEW: Core Pillars Section */
+        .core-pillars {
+            background-color: var(--white);
+            padding: var(--spacing-xl) 0;
+        }
+
+        .pillars-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .pillar-card {
+            text-align: center;
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            background: var(--white);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold);
+        }
+
+        .pillar-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--spacing-md);
+            background: var(--gold-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            animation: pillarPulse 3s infinite ease-in-out;
+        }
+
+        .pillar-card:hover .pillar-icon {
+            animation: pillarPulse 1s infinite ease-in-out;
+        }
+
+        .pillar-card h3 {
+            color: var(--charcoal);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .pillar-card p {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
         /* About Section */
         .about {
-            background-color: var(--white);
+            background-color: var(--light-gray);
         }
 
         .about-container {
@@ -608,7 +664,7 @@
 
         /* Services Section - Clean */
         .services {
-            background-color: var(--light-gray);
+            background-color: var(--white);
         }
 
         .services-grid {
@@ -664,15 +720,54 @@
             font-size: 1.5rem;
         }
 
-        /* Projects Section - All 6 Photos */
+        /* Projects Section - Tabs for Construction & Interior */
         .projects {
-            background-color: var(--white);
+            background-color: var(--light-gray);
+        }
+
+        .projects-tabs {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 0.8rem 1.8rem;
+            background: var(--white);
+            border: 2px solid var(--medium-gray);
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            color: var(--charcoal);
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+
+        .tab-btn:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .tab-btn.active {
+            background: var(--gold-gradient);
+            color: var(--white);
+            border-color: var(--gold);
         }
 
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: var(--spacing-md);
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .projects-grid.hidden {
+            display: none;
+            opacity: 0;
         }
 
         .project-item {
@@ -1081,6 +1176,10 @@
             .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+            
+            .pillars-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
 
         @media (max-width: 992px) {
@@ -1105,6 +1204,11 @@
             
             .quote-actions .action-btn {
                 width: 100%;
+            }
+            
+            .pillars-container {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
             }
         }
 
@@ -1271,6 +1375,16 @@
             .price-amount {
                 font-size: 1.6rem;
             }
+            
+            .projects-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                max-width: 250px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1310,6 +1424,10 @@
             
             .project-item {
                 height: 220px;
+            }
+            
+            .pillar-card {
+                padding: var(--spacing-md);
             }
         }
     </style>
@@ -1351,7 +1469,7 @@
                     <h1>Building Trust.<br>Creating Landmarks.</h1>
                     <p>Sri Maruti Venture delivers premium residential and commercial construction with precision, transparency, and long-term value.</p>
                     
-                    <!-- NEW: Animated Price Tag -->
+                    <!-- Animated Price Tag -->
                     <div class="price-tag fade-in">
                         <i class="fas fa-tag"></i>
                         <span>Starting from ₹1899/sq.ft</span>
@@ -1361,6 +1479,42 @@
                     <a href="#quote" class="btn">
                         <i class="fas fa-hard-hat"></i> Start Your Project
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Core Pillars Section - Quality, Trust, On-Time Delivery -->
+        <section id="pillars" class="core-pillars">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Core Pillars</h2>
+                    <p class="text-center">The foundation of our success lies in these three unwavering commitments</p>
+                </div>
+                
+                <div class="pillars-container">
+                    <div class="pillar-card fade-in">
+                        <div class="pillar-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Uncompromising Quality</h3>
+                        <p>We use premium materials, skilled craftsmen, and rigorous quality checks to ensure every project meets the highest standards of excellence.</p>
+                    </div>
+                    
+                    <div class="pillar-card fade-in">
+                        <div class="pillar-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Complete Trust</h3>
+                        <p>Transparent processes, honest communication, and ethical practices build lasting relationships with our clients based on mutual trust.</p>
+                    </div>
+                    
+                    <div class="pillar-card fade-in">
+                        <div class="pillar-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>On-Time Delivery</h3>
+                        <p>We respect your time with disciplined project management, strict deadlines, and efficient execution to deliver projects as promised.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1375,11 +1529,11 @@
                 
                 <div class="about-container">
                     <div class="about-content fade-in">
-                        <h3>Excellence in Construction Since 2005</h3>
+                        <h3>Excellence in Construction Since 2007</h3>
                         <p>At Sri Maruti Venture, we believe that great construction is about more than just building structures—it's about creating lasting value, trust, and landmarks that stand the test of time.</p>
                         <p>Our commitment to using premium materials, employing skilled craftsmen, and maintaining clear communication ensures every project meets the highest standards of excellence.</p>
                         
-                        <!-- NEW: Pricing Highlight Box -->
+                        <!-- Pricing Highlight Box -->
                         <div class="pricing-highlight fade-in">
                             <h4>Transparent & Competitive Pricing</h4>
                             <p>We offer premium construction services starting at just <strong>₹1899 per square foot</strong>. Our transparent pricing includes quality materials, skilled labor, and comprehensive project management.</p>
@@ -1445,51 +1599,97 @@
                     
                     <div class="service-card fade-in">
                         <div class="service-image">
-                            <img src="https://images.unsplash.com/photo-1503387769-00a112127ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Architectural Design Services">
+                            <img src="i7.jpeg" alt="Architectural Design Services">
                         </div>
                         <div class="service-content">
                             <div class="service-icon">
                                 <i class="fas fa-drafting-compass"></i>
                             </div>
-                            <h3>Architectural Design</h3>
-                            <p>Innovative architectural solutions that blend form and function, creating structures that are both beautiful and practical.</p>
+                            <h3>Interior Design</h3>
+                            <p>Premium interior design services that transform spaces into beautiful, functional, and comfortable environments.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section - ALL 6 PHOTOS -->
+        <!-- Projects Section - TABS for Construction & Interior -->
         <section id="projects" class="projects">
             <div class="container">
                 <div class="section-title">
                     <h2>Our Projects</h2>
-                    <p class="text-center">A showcase of our premium residential and commercial construction projects.</p>
+                    <p class="text-center">Explore our portfolio of premium construction and interior design projects.</p>
                 </div>
                 
-                <div class="projects-grid">
-                    <div class="project-item fade-in">
-                        <img src="p1.jpeg" alt="Sri Maruti Venture Project 1 - Luxury Residential Complex">
+                <!-- Project Tabs -->
+                <div class="projects-tabs">
+                    <button class="tab-btn active" data-tab="construction">Construction Projects</button>
+                    <button class="tab-btn" data-tab="interior">Interior Projects</button>
+                </div>
+                
+                <!-- Construction Projects (p1-p6.jpeg) -->
+                <div id="construction-tab" class="projects-grid fade-in">
+                    <div class="project-item">
+                        <img src="p1.jpeg" alt="Sri Maruti Venture Construction Project 1 - Luxury Residential Complex">
                     </div>
                     
-                    <div class="project-item fade-in">
-                        <img src="p2.jpeg" alt="Sri Maruti Venture Project 2 - Modern Commercial Plaza">
+                    <div class="project-item">
+                        <img src="p2.jpeg" alt="Sri Maruti Venture Construction Project 2 - Modern Commercial Plaza">
                     </div>
                     
-                    <div class="project-item fade-in">
-                        <img src="p3.jpeg" alt="Sri Maruti Venture Project 3 - Premium Villa Development">
+                    <div class="project-item">
+                        <img src="p3.jpeg" alt="Sri Maruti Venture Construction Project 3 - Premium Villa Development">
                     </div>
                     
-                    <div class="project-item fade-in">
-                        <img src="p4.jpeg" alt="Sri Maruti Venture Project 4 - Urban Residential Tower">
+                    <div class="project-item">
+                        <img src="p4.jpeg" alt="Sri Maruti Venture Construction Project 4 - Urban Residential Tower">
                     </div>
                     
-                    <div class="project-item fade-in">
-                        <img src="p5.jpeg" alt="Sri Maruti Venture Project 5 - Corporate Office Building">
+                    <div class="project-item">
+                        <img src="p5.jpeg" alt="Sri Maruti Venture Construction Project 5 - Corporate Office Building">
                     </div>
                     
-                    <div class="project-item fade-in">
-                        <img src="p6.jpeg" alt="Sri Maruti Venture Project 6 - High-end Apartment Complex">
+                    <div class="project-item">
+                        <img src="p6.jpeg" alt="Sri Maruti Venture Construction Project 6 - High-end Apartment Complex">
+                    </div>
+                </div>
+                
+                <!-- Interior Projects (i1-i9.jpeg) -->
+                <div id="interior-tab" class="projects-grid fade-in hidden">
+                    <div class="project-item">
+                        <img src="i1.jpeg" alt="Sri Maruti Venture Interior Project 1 - Modern Living Room">
+                    </div>
+                    
+                    <div class="project-item">
+                        <img src="i2.jpeg" alt="Sri Maruti Venture Interior Project 2 - Luxury Kitchen Design">
+                    </div>
+                    
+                    <div class="project-item">
+                        <img src="i3.jpeg" alt="Sri Maruti Venture Interior Project 3 - Contemporary Bedroom">
+                    </div>
+                    
+                    <div class="project-item">
+                        <img src="i4.jpeg" alt="Sri Maruti Venture Interior Project 4 - Office Interior">
+                    </div>
+                    
+                    <div class="project-item">
+                        <img src="i5.jpeg" alt="Sri Maruti Venture Interior Project 5 - Restaurant Design">
+                    </div>
+                    
+                    <div class="project-item">
+                        <img src="i6.jpeg" alt="Sri Maruti Venture Interior Project 6 - Bathroom Design">
+                    </div>
+                    
+                    <div class="project-item">
+                        <img src="i7.jpeg" alt="Sri Maruti Venture Interior Project 7 - Hotel Lobby">
+                    </div>
+                    
+                    <div class="project-item">
+                        <img src="i8.jpeg" alt="Sri Maruti Venture Interior Project 8 - Retail Store Design">
+                    </div>
+                    
+                    <div class="project-item">
+                        <img src="i9.jpeg" alt="Sri Maruti Venture Interior Project 9 - Luxury Villa Interior">
                     </div>
                 </div>
             </div>
@@ -1514,7 +1714,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
-                            <p class="testimonial-text">"Sri Maruti Venture transformed our vision into reality with exceptional craftsmanship and attention to detail. Their transparent pricing and commitment to quality made our construction journey smooth and stress-free."</p>
+                            <p class="testimonial-text">"Sri Maruti Venture delivered our home project with exceptional quality, maintained complete transparency throughout, and finished ahead of schedule. Their commitment to trust and on-time delivery is remarkable!"</p>
                             <div class="client-info">
                                 <div class="client-avatar">
                                     <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Kumar - Satisfied Client">
@@ -1538,7 +1738,7 @@
                         <h2>Get Your Free Quote</h2>
                         <p>Start your construction project with confidence. Get a detailed quote from our experts within 24 hours.</p>
                         
-                        <!-- NEW: Animated Price Badge -->
+                        <!-- Animated Price Badge -->
                         <div class="price-badge">
                             <span class="price-amount">₹1899</span>
                             <span class="price-unit">Starting price per sq.ft</span>
@@ -1572,9 +1772,10 @@
                                 <label for="quoteProjectType">Project Type *</label>
                                 <select id="quoteProjectType" class="form-select" required>
                                     <option value="">Select Project Type</option>
-                                    <option value="residential">Residential</option>
-                                    <option value="commercial">Commercial</option>
-                                    <option value="both">Both</option>
+                                    <option value="residential">Residential Construction</option>
+                                    <option value="commercial">Commercial Construction</option>
+                                    <option value="interior">Interior Design</option>
+                                    <option value="both">Multiple Services</option>
                                 </select>
                             </div>
                             <button type="submit" class="btn form-submit">
@@ -1608,6 +1809,7 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
+                        <li><a href="#pillars">Our Pillars</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -1713,6 +1915,31 @@
         
         fadeElements.forEach(el => fadeObserver.observe(el));
         
+        // NEW: Project Tabs Functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const projectGrids = document.querySelectorAll('.projects-grid');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Get the tab to show
+                const tabToShow = button.getAttribute('data-tab');
+                
+                // Hide all project grids
+                projectGrids.forEach(grid => {
+                    grid.classList.add('hidden');
+                });
+                
+                // Show the selected tab
+                document.getElementById(`${tabToShow}-tab`).classList.remove('hidden');
+            });
+        });
+        
         // Back to Top Button
         const backToTop = document.querySelector('.back-to-top');
         window.addEventListener('scroll', () => {
@@ -1785,6 +2012,20 @@
             
             tag.addEventListener('mouseleave', () => {
                 tag.style.animation = 'priceGlow 3s infinite ease-in-out';
+            });
+        });
+        
+        // Pillar Card Animation Enhancement
+        const pillarCards = document.querySelectorAll('.pillar-card');
+        pillarCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const icon = card.querySelector('.pillar-icon');
+                icon.style.animation = 'pillarPulse 1s infinite ease-in-out';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                const icon = card.querySelector('.pillar-icon');
+                icon.style.animation = 'pillarPulse 3s infinite ease-in-out';
             });
         });
     </script>
